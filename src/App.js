@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 2000);
   }, []);
 
   if (isLoading) {
@@ -21,7 +21,7 @@ function App() {
   return (
     <div
       style={{ cursor: `url(${cursor}),auto` }}
-      className="App bg-slate-700 min-h-screen lg:flex"
+      className="App bg-slate-700 min-h-screen lg:flex relative"
     >
       <Header />
       <Main />

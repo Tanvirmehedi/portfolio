@@ -3,7 +3,6 @@ import React from "react";
 const Social = () => {
   return (
     <div className="absolute bottom-10">
-      <span className="uppercase font-bold text-cyan-100">Find Me On :</span>
       <span className="m-5">
         <button
           type="button"
