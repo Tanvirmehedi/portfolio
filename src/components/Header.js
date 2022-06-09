@@ -25,8 +25,8 @@ const Header = () => {
           <span>
             {
               <Tooltip content="MongoDb,Express,React,Node" arrow={false}>
-                <span className="font-bold text-cyan-200">Mern</span>{" "}
-                Technologies.
+                <span className="font-bold text-cyan-200">Mern</span>
+                <span>Technologies.</span>
               </Tooltip>
             }
           </span>

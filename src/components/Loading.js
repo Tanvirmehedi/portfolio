@@ -5,7 +5,7 @@ const Loading = () => {
   return (
     <div className="w-screen h-screen flex justify-center items-center bg-slate-600">
       <div className="text-center">
-        <Spinner ariaLabel="Center-aligned spinner example" />
+        <Spinner aria-label="Center-aligned spinner example" />
       </div>
     </div>
   );

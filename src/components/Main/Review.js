@@ -25,7 +25,10 @@ const Review = () => {
       <Carousel leftControl rightControl>
         {review.map((data) => {
           return (
-            <div className="flex h-full items-center justify-center bg-cyan-200  dark:bg-gray-700 dark:text-white">
+            <div
+              key={data?.id}
+              className="flex h-full items-center justify-center bg-cyan-200  dark:bg-gray-700 dark:text-white"
+            >
               <div className="w-3/4">
                 <h2 className="block text-lg font-semibold text-cyan-800 overflow-hidden">
                   {data?.text}
