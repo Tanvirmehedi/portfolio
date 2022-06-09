@@ -23,12 +23,12 @@ const ImageView = () => {
     },
   ];
   return (
-    <div className={`w-full h-screen bg-cyan-200`}>
-      <div>
-        <img src={bg} className="w-2/3 mx-auto py-10" alt="" />
+    <div className={`w-full min-h-screen bg-cyan-200 sticky top-0 -z-0 `}>
+      <div className="">
+        <img src={bg} className="w-2/3 mx-auto py-10 " alt="" />
       </div>
 
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-4 mx-4">
+      <div className="grid lg:grid-cols-3 grid-cols-3 gap-4 mx-4">
         {services.map((data) => {
           return (
             <div
