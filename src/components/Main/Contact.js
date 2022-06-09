@@ -8,10 +8,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_557teus",
-        "template_diogk9w",
+        `service_557teus`,
+        `template_diogk9w`,
         form.current,
-        "DfhyYxoP_dopEwHPn"
+        `DfhyYxoP_dopEwHPn`
       )
       .then(
         (result) => {

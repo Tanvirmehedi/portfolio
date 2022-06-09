@@ -3,7 +3,6 @@ import "react-toastify/dist/ReactToastify.css";
 import cursor from "./Assets/cursor.png";
 import Header from "./components/Header";
 import Main from "./components/Main";
-console.log(cursor);
 
 function App() {
   return (

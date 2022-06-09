@@ -2,6 +2,7 @@ import React from "react";
 import About from "./Main/About";
 import Contact from "./Main/Contact";
 import ImageView from "./Main/ImageView";
+import Footer from "./Main/MainFooter";
 import Project from "./Main/Project";
 import Review from "./Main/Review";
 
@@ -14,6 +15,7 @@ const Main = () => {
         <Review />
         <Project />
         <Contact />
+        <Footer />
       </div>
     </div>
   );
