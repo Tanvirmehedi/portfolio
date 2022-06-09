@@ -23,7 +23,9 @@ const ImageView = () => {
     },
   ];
   return (
-    <div className={`w-full min-h-screen bg-cyan-200 sticky top-0 -z-0 `}>
+    <div
+      className={`w-full min-h-fit pb-5 lg:pb-0 lg:min-h-screen bg-cyan-200 sticky top-0 -z-0 `}
+    >
       <div className="">
         <img src={bg} className="w-2/3 mx-auto py-10 " alt="" />
       </div>
