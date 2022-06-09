@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./Main/About";
 import ImageView from "./Main/ImageView";
+import Review from "./Main/Review";
 
 const Main = () => {
   return (
@@ -8,6 +9,7 @@ const Main = () => {
       <ImageView />
       <div className="relative z-50 bg-cyan-50">
         <About />
+        <Review />
       </div>
     </div>
   );

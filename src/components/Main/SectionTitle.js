@@ -7,7 +7,7 @@ const SectionTitle = (props) => {
         {props.text}{" "}
         <span>
           <svg
-            class="w-6 h-6 inline-block text-cyan-800"
+            className="w-6 h-6 inline-block text-cyan-800"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

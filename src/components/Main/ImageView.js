@@ -33,12 +33,12 @@ const ImageView = () => {
           return (
             <div
               key={data.id}
-              class="block p-3 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+              className="block p-3 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
             >
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center uppercase flex justify-center items-center">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center uppercase flex justify-center items-center">
                 {data?.name}
               </h5>
-              <p class="font-normal text-gray-700 dark:text-gray-400 flex justify-center">
+              <p className="font-normal text-gray-700 dark:text-gray-400 flex justify-center">
                 <img src={data?.img} className="mx-auto" alt="" />
               </p>
             </div>
