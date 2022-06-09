@@ -1,6 +1,8 @@
 import React from "react";
 import About from "./Main/About";
+import Contact from "./Main/Contact";
 import ImageView from "./Main/ImageView";
+import Project from "./Main/Project";
 import Review from "./Main/Review";
 
 const Main = () => {
@@ -10,6 +12,8 @@ const Main = () => {
       <div className="relative z-50 bg-cyan-50">
         <About />
         <Review />
+        <Project />
+        <Contact />
       </div>
     </div>
   );
