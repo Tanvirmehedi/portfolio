@@ -4,7 +4,7 @@ import SectionTitle from "./SectionTitle";
 
 const About = () => {
   return (
-    <div className="min-h-screen pb-10">
+    <div className="min-h-screen pb-10  ">
       <SectionTitle text="About Me" />
       <div className="px-12 my-10">
         <div>

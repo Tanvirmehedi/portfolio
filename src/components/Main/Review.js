@@ -21,7 +21,7 @@ const Review = () => {
     },
   ];
   return (
-    <div className="bg-cyan-200 py-10 h-auto">
+    <div className="bg-cyan-200 py-10 h-auto sticky top-0">
       <Carousel leftControl rightControl>
         {review.map((data) => {
           return (

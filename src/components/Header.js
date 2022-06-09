@@ -1,3 +1,4 @@
+import { Tooltip } from "flowbite-react";
 import React from "react";
 import Typed from "react-typed";
 import Social from "./Social";
@@ -20,8 +21,15 @@ const Header = () => {
           JR.Full-stack Mern Developer
         </h1>
         <p className="mt-8 capitalize text-cyan-300">
-          My Name Is Tanvir Mehedi, and i make Mordant Web Application <br />{" "}
-          with Mern Technologies.
+          My Name Is Tanvir Mehedi, and i make Mordant Web Application with
+          <span>
+            {
+              <Tooltip content="MongoDb,Express,React,Node" arrow={false}>
+                <span className="font-bold text-cyan-200">Mern</span>{" "}
+                Technologies.
+              </Tooltip>
+            }
+          </span>
         </p>
         <div className="mt-10 ">
           <a

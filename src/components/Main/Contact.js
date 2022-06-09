@@ -24,7 +24,7 @@ const Contact = () => {
       );
   };
   return (
-    <div id="contact">
+    <div id="contact" className="sticky top-0 bg-cyan-100">
       <SectionTitle text="Contact" />
       <div className="w-3/4 mx-auto py-8">
         <form ref={form} onSubmit={sendMail}>
