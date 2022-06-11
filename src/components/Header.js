@@ -1,13 +1,17 @@
 import { Tooltip } from "flowbite-react";
+// import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import React from "react";
 import Typed from "react-typed";
 import Social from "./Social";
 const Header = () => {
+  console.log(motion);
   return (
     <div className="relative lg:w-1/2 bg-slate-600 h-screen lg:sticky top-0 px-10 pt-10">
       <nav>
         <div className="text-3xl font-semibold text-slate-100">
           <svg
+            transition={{ repeat: Infinity, duration: 2 }}
             xmlns="http://www.w3.org/2000/svg"
             className="w-6 h-6 -mt-1 inline-block mx-2 bg-cyan-400 rounded-full"
             viewBox="0 0 48 48"
@@ -213,18 +217,36 @@ const Header = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-lg font-medium text-cyan-400 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-              <span className="relative px-4 lg:px-16 py-2.5 transition-all ease-in duration-75 bg-slate-600 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 ">
+            <motion.button
+              whileHover={{
+                originX: 0.5,
+                scale: 1.1,
+                textShadow: "0px,0px,8px,rgb(255,255,255)",
+                boxShadow: "0px,0px,8px,rgb(255,255,255)",
+              }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-4 overflow-hidden text-lg font-medium text-cyan-400 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
+            >
+              <span className="relative px-4 lg:px-10 py-2.5 transition-all ease-in duration-75 bg-slate-600 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 ">
                 Resume
               </span>
-            </button>
+            </motion.button>
           </a>
           <a href="#contact" rel="noreferrer">
-            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-lg font-medium text-cyan-400 rounded-lg group bg-gradient-to-br from-cyan-400 to-blue-400 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+            <motion.button
+              whileHover={{
+                originX: -0.3,
+                scale: 1.1,
+                textShadow: "0px,0px,8px,rgb(255,255,255)",
+                boxShadow: "0px,0px,8px,rgb(255,255,255)",
+              }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-lg font-medium text-cyan-400 rounded-lg group bg-gradient-to-br from-cyan-400 to-blue-400 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
+            >
               <span className="relative px-4 lg:px-16 py-2.5 transition-all ease-in duration-75 bg-slate-500 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 ">
                 Lets Talk
               </span>
-            </button>
+            </motion.button>
           </a>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import api from "../../Assets/api.svg";
 import mern from "../../Assets/mern.svg";
@@ -27,7 +28,19 @@ const ImageView = () => {
       className={`w-full min-h-fit pb-5 lg:pb-0 lg:min-h-screen bg-cyan-200 sticky top-0 -z-0 `}
     >
       <div className="">
-        <img src={bg} className="w-2/3 mx-auto py-10 " alt="" />
+        <motion.img
+          initial={{ y: 0 }}
+          animate={{ y: -7 }}
+          transition={{
+            duration: 3.5,
+            yoyo: Infinity,
+            type: "just",
+            stiffness: 400,
+          }}
+          src={bg}
+          className="w-2/3 mx-auto py-10 drop-shadow-xl"
+          alt=""
+        />
       </div>
 
       <div className="grid lg:grid-cols-3 grid-cols-3 gap-4 mx-4">
