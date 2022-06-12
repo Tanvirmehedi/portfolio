@@ -1,5 +1,5 @@
 import { Carousel } from "flowbite-react";
-import React from "react";
+import { motion } from "framer-motion";
 
 const Review = () => {
   const review = [
@@ -25,7 +25,9 @@ const Review = () => {
       <Carousel leftControl rightControl>
         {review.map((data) => {
           return (
-            <div
+            <motion.div
+              whileFocus={{ transition: "all 0.5s ease-in" }}
+              transition={{ type: "spring", stiffness: 200 }}
               key={data?.id}
               className="flex h-full items-center justify-center bg-cyan-200  dark:bg-gray-700 dark:text-white"
             >
@@ -37,7 +39,7 @@ const Review = () => {
                   {data.name}
                 </p>
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </Carousel>
